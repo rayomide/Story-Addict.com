@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="a_500_500_book_favicon_round_shape_on_the_book_should_be_story_addict.jpeg" type="image\icon">
+    <title>Settings</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <h1> Story Addict Settings</h1>
+    <nav id="nav01"></nav>
+    <div id="main">
+        <div class="auth-form">
+            <h2>Login</h2>
+            <form id="login-form">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password">
+              <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+          </div>
+          <div class="auth-form" style="display: none;">
+            <h2>Sign up</h2>
+            <form id="signup-form">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <button type="submit">Sign up</button>
+            </form>
+          </div>
+        <div class="account-settings">
+            <h1>Account Settings</h1>
+            <div class="story-settings">
+                <h2>Story Settings</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="story-format">Default Story Format:</label>
+                    <select id="story-format" name="story-format">
+                      <option value="text">Text</option>
+                      <option value="audio">Audio</option>
+                      <option value="video">Video</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="story-sorting">Story Sorting:</label>
+                    <select id="story-sorting" name="story-sorting">
+                      <option value="title">Title</option>
+                      <option value="author">Author</option>
+                      <option value="date">Date</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="story-filtering">Story Filtering:</label>
+                    <select id="story-filtering" name="story-filtering">
+                      <option value="all">All</option>
+                      <option value="genre">Genre</option>
+                      <option value="author">Author</option>
+                    </select>
+                  </div>
+                  <button type="submit">Save Changes</button>
+                </form>
+              </div>
+            <form>
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="your_username">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="your_email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+          <div class="notifications">
+            <h2>Notifications</h2>
+            <form>
+              <div class="form-group">
+                <label for="new-story-notifications">New Story Notifications:</label>
+                <input type="checkbox" id="new-story-notifications" name="new-story-notifications">
+              </div>
+              <div class="form-group">
+                <label for="comment-notifications">Comment Notifications:</label>
+                <input type="checkbox" id="comment-notifications" name="comment-notifications">
+              </div>
+              <div class="form-group">
+                <label for="mention-notifications">Mention Notifications:</label>
+                <input type="checkbox" id="mention-notifications" name="mention-notifications">
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+          <div class="analytics">
+            <h2>Analytics</h2>
+            <div class="metrics">
+              <div class="metric">
+                <label>Page Views:</label>
+                <span id="page-views">0</span>
+              </div>
+              <div class="metric">
+                <label>Unique Visitors:</label>
+                <span id="unique-visitors">0</span>
+              </div>
+              <div class="metric">
+                <label>Bounce Rate:</label>
+                <span id="bounce-rate">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-restrictions">
+            <h2>Content Restrictions</h2>
+            <form>
+              <div class="form-group">
+                <label for="mature-content-filter">Mature Content Filter:</label>
+                <select id="mature-content-filter" name="mature-content-filter">
+                  <option value="off">Off</option>
+                  <option value="on">On</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="genre-restrictions">Genre Restrictions:</label>
+                <select id="genre-restrictions" name="genre-restrictions" multiple>
+                  <option value="romance">Romance</option>
+                  <option value="horror">Horror</option>
+                  <option value="Arts">Arts</option>
+                  <option value="war">war</option>
+                  <option value="Fairy tales">Fairy tales</option>
+                </select>
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+          <div class="customization">
+            <h2>Customization</h2>
+            <form>
+              <div class="form-group">
+                <label for="custom-homepage">Custom Homepage:</label>
+                <input type="text" id="custom-homepage" name="custom-homepage">
+              </div>
+              <div class="form-group">
+                <label for="favorite-authors">Favorite Authors:</label>
+                <input type="text" id="favorite-authors" name="favorite-authors">
+              </div>
+              <div class="form-group">
+                <label for="favorite-stories">Favorite Stories:</label>
+                <input type="text" id="favorite-stories" name="favorite-stories">
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+          <div class="accessibility">
+            <h2>Accessibility</h2>
+            <form>
+              <div class="form-group">
+                <label for="screen-reader-mode">Screen Reader Mode:</label>
+                <input type="checkbox" id="screen-reader-mode" name="screen-reader-mode">
+              </div>
+              <div class="form-group">
+                <label for="high-contrast-mode">High Contrast Mode:</label>
+                <input type="checkbox" id="high-contrast-mode" name="high-contrast-mode">
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+          <div class="content-restrictions">
+            <h2>Content Restrictions</h2>
+            <form>
+              <div class="form-group">
+                <label for="mature-content-filter">Mature Content Filter:</label>
+                <select id="mature-content-filter" name="mature-content-filter">
+                  <option value="off">Off</option>
+                  <option value="on">On</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="genre-restrictions">Genre Restrictions:</label>
+                <select id="genre-restrictions" name="genre-restrictions" multiple>
+                  <option value="romance">Romance</option>
+                  <option value="horror">Horror</option>
+                  <option value="sci-fi">Sci-Fi</option>
+                </select>
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+</div>
+        <footer id="foot01"></footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

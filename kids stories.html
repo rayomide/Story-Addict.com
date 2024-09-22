@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="a_500_500_book_favicon_round_shape_on_the_book_should_be_story_addict.jpeg" type="image\icon">
+    <title> stories</title>
+    <link href="site.css" rel="stylesheet">
+    <script src="http://www.Google.com/appml/2.0.1/appml.js"></script>
+</head>
+<body>
+    <nav id="nav01"></nav>
+    <div id="main">
+        <table appml-stories="http://www.Google.com/website/STORIES.php"></table>
+        <h1>LOVE stories</h1>
+<script src="script.js"></script>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "http://www.Google.com.com/website/stories.php";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        myFunction(xmlhttp.responseText);
+    }
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(response) {
+    var obj = JSON.parse(response);
+    var arr = obj.records;
+    var i;
+    var out = "<table><tr><th>Name</th><th>City</th><th>Country</th></tr>";
+
+    for(i = 0; i < arr.length; i++) {
+        out += "<tr><td>" + 
+        arr[i].Name +
+        "</td><td>" +
+        arr[i].Age  +
+        "</td><td>" +
+        arr[i].Country ; +
+        "</td></tr>";
+    }
+
+    out += "</table>"
+    document.getElementById("id01").innerHTML = out;
+}
+</script>
+
+        
+<table>
+    <tr>
+        <th>s\n</th>
+      <th>Name </th>
+      <th>Country </th>
+      <th>Author</th>
+      <th>Age</th>
+
+    </tr>
+        <tr>
+            <td>1</td>
+            <td> Anansi the Spider</td>
+           <td>Ghana</td> 
+           <td>Gerald McDermott</td>
+           <td>4-8</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mufaro's Beautiful Daughters</td>
+            <td>Zimbabwe</td>
+            <td>John steptoe</td>
+            <td>5-9</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>The Girl who married a star</td>
+            <td>South Africa</td>
+            <td>Bara Tyrrell</td>
+            <td>6-10</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Why mosquitoes buzz in people's ears</td>
+            <td>Nigeria</td>
+            <td>Verna Aardema</td>
+            <td>5-8</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>The Magic Tree House</td>
+            <td>Egyt</td>
+            <td>Mary Pope Osborne</td>
+            <td>6-10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>The Tale of Mandarin Ducks</td>
+            <td>Japan</td>
+            <td>Katherine Paterson</td>
+            <td>4-8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>The Story of Maha</td>
+            <td>india</td>
+            <td>Samarandra Kumar</td>
+            <td>5-9</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>The White Tiger</td>
+            <td>China</td>
+            <td>Aravind Adiga</td>
+            <td>9-12</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>The Little Prince</td>
+            <td>france</td>
+            <td>Antoine de saint Exupéry</td>
+            <td>7-11</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>The Little Clay Cart</td>
+            <td>Korea</td>
+            <td>Suzanne crowder han</td>
+            <td>6-10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>The girl who drew butterflies</td>
+            <td>Japan</td>
+            <td>Joyce sidman</td>
+            <td>7-11</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Goldilocks and the There Bears</td>
+            <td>UK</td>
+            <td>Robert Southey</td>
+            <td>4-8</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Cinderella</td>
+            <td>France</td>
+            <td>Charles Perrault</td>
+            <td>5-9</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Hansel and Gretel</td>
+            <td>Germany</td>
+            <td>Brothers Grimm</td>
+            <td>6-10</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>The Snow Queen</td>
+            <td>Demark</td>
+            <td>Hans Christian Andersen</td>
+            <td>8-12</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>The Giving Tree</td>
+            <td>USA</td>
+            <td>Shel Silvertein</td>
+            <td>4-8</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Where The Wild Things Are</td>
+            <td>USA</td>
+            <td>Maurice Sendak</td>
+            <td>5-9</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Corduroy</td>
+            <td>USA</td>
+            <td>Don Freeman</td>
+            <td>4-8</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>The Polar Express</td>
+            <td>USA</td>
+            <td>Chris Van Allsburg</td>
+            <td>5-9</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>The Very Hungry Caterpillar</td>
+            <td>USA</td>
+            <td>Eric Carle</td>
+            <td>4-8</td>
+        </tr>
+</table>
+<p>looking for story with the tyles like arts, honesty, science,self aceptance etc here are some</p>
+<table>
+        <tr>
+            <td>21</td>
+            <td>The cat in the hat</td>
+            <td>Dr. Seuss</td>
+            <td>4-8</td>
+            <td>Humor</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Green eggs and Ham</td>
+            <td>Dr. Seuss</td>
+            <td>2-5</td>
+            <td>Try new Things</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Make Way for Ducklings</td>
+            <td>Robert McCloskey</td>
+            <td>2-5</td>
+            <td>Family</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>The Story of Ferdinand</td>
+            <td>Munro Leaf</td>
+            <td>4-8</td>
+            <td>Peacefulness</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Charlotte's Web</td>
+            <td> E.B. White</td>
+            <td>8-12</td>
+            <td>Friendship</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+</table>
+<footer id="foot01"></footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
